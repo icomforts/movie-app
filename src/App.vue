@@ -21,7 +21,6 @@ export default {
   },
   watch: {
     $route() {
-      console.log(this.$route.name);
       const sechma = ["Movie", "Actor", "Movies", "Search"];
       if (sechma.includes(this.$route.name)) {
         this.check = false;
@@ -29,6 +28,14 @@ export default {
         this.check = true;
       }
     },
+  },
+  created(){
+      const sechma = ["Movie", "Actor", "Movies", "Search"];
+      if (sechma.includes(this.$route.name)) {
+        this.check = false;
+      } else {
+        this.check = true;
+      }
   },
   mounted() {},
 };
