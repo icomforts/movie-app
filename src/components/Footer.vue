@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <span>僅作為DEMO使用</span>
+    <span>僅作為DEMO使用123</span>
   </div>
 </template>
 <style lang="scss">
