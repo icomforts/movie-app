@@ -58,6 +58,10 @@ export default {
       //   with_keywords: "黑寡婦",
       //   with_original_language: "en",
       // };
+       window.gtag('event', 'click search', {
+    'event_category': 'Click',
+    'event_label': '搜尋',
+    });
       if (this.keyword)
         this.$router.push({ path: `/search/${this.keyword}/1` });
     },
