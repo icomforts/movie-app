@@ -13,6 +13,11 @@ export default {
   methods: {
     alert(msg) {
       alert(msg);
+         window.gtag('event', 'Nav Click', {
+    'event_category': 'Click',
+    'event_label': '網站分析/GA教學',
+    'value': '出現喔'
+    });
     },
   },
 
