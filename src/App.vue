@@ -3,7 +3,6 @@
     <Navbar v-if="check" />
     <router-view />
     <Footer v-if="check" />
-    1
   </div>
 </template>
 <script>
