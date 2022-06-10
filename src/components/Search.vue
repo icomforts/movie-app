@@ -39,6 +39,7 @@
   </div>
 </template>
 <script>
+import errorHandler from "@/utils/errorHandlerUtility";
 export default {
   props: [],
   components: {},
@@ -50,20 +51,20 @@ export default {
   },
   methods: {
     search() {
+      errorHandler.report("QQQQQ");
       // const params = {
       //   page: 1,
-
       //   sort_by: "popularity.desc",
       //   with_genres: "12,28",
       //   with_keywords: "黑寡婦",
       //   with_original_language: "en",
       // };
-       window.gtag('event', 'click search', {
-    'event_category': 'Click',
-    'event_label': '搜尋',
-    });
-      if (this.keyword)
-        this.$router.push({ path: `/search/${this.keyword}/1` });
+      // window.gtag("event", "click search", {
+      //   event_category: "Click",
+      //   event_label: "搜尋",
+      // });
+      // if (this.keyword)
+      //   this.$router.push({ path: `/search/${this.keyword}/1` });
     },
   },
 };
