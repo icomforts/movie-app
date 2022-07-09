@@ -51,7 +51,6 @@ export default {
   },
   methods: {
     search() {
-      errorHandler.report("QQQQQ");
       // const params = {
       //   page: 1,
       //   sort_by: "popularity.desc",
@@ -63,9 +62,8 @@ export default {
       //   event_category: "Click",
       //   event_label: "搜尋",
       // });
-      // if (this.keyword)
-      //   this.$router.push({ path: `/search/${this.keyword}/1` });
-    },
+      if (this.keyword)this.$router.push({ path: `/search/${this.keyword}/1` });
+            },
   },
 };
 </script>
