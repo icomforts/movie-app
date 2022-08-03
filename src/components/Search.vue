@@ -21,6 +21,7 @@
 </template>
 <script>
 import errorHandler from "@/utils/errorHandlerUtility";
+
 export default {
   props: [],
   components: {},
