@@ -1,2 +1,4 @@
 電影資訊網站
-DEMO:https://168-project-green.vercel.app/
+使用 Vue、iView 架構進行開發
+資料引用自 TMDB
+demo : themoviedb
