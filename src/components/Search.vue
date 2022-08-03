@@ -8,25 +8,6 @@
             <Input v-model="keyword" placeholder="電影名稱"></Input>
           </div>
         </Col>
-        <!-- <Col span="5" class="center">
-          <FormItem class="item">
-            <Select
-              v-model="formItem.type"
-              multiple
-              placeholder="選擇類型"
-              :max-tag-count="2"
-            >
-              <Option value="beijing">New York</Option>
-              <Option value="shanghai">London</Option>
-              <Option value="shenzhen">Sydnsey</Option>
-              <Option value="shenzhden">Sydney</Option>
-              <Option value="shenzehen">Sydney</Option>
-              <Option value="shenzhzen">Sydney</Option>
-              <Option value="shenzhsen">Sydney</Option>
-              <Option value="shenzhfen">Sydney</Option>
-            </Select>
-          </FormItem>
-        </Col> -->
         <Col span="5">
           <div class="item">
             <button type="submit" class="searchBtn" @click="search">
@@ -51,17 +32,6 @@ export default {
   },
   methods: {
     search() {
-      // const params = {
-      //   page: 1,
-      //   sort_by: "popularity.desc",
-      //   with_genres: "12,28",
-      //   with_keywords: "黑寡婦",
-      //   with_original_language: "en",
-      // };
-      // window.gtag("event", "click search", {
-      //   event_category: "Click",
-      //   event_label: "搜尋",
-      // });
       if (this.keyword)this.$router.push({ path: `/search/${this.keyword}/1` });
             },
   },
